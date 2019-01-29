@@ -1,0 +1,170 @@
+{
+  "title": "Device Class (Root)",
+  "required": [
+    "id",
+    "type",
+    "general",
+    "hardware",
+    "software",
+    "interfaces"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "title": "Device ID",
+      "default": "",
+      "examples": [
+        "511cccdf-70d6-497e"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "type": {
+      "type": "string",
+      "title": "Device Type",
+      "default": "New Device",
+      "examples": [
+        "Avax MUX"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "general": {
+      "title": "General Properties",
+      "required": [
+        "hostname",
+        "timezone",
+        "coordinates",
+        "dimensions",
+        "maintainer",
+        "description"
+      ],
+      "properties": {
+        "hostname": {
+          "type": "string",
+          "title": "Hostname",
+          "default": "",
+          "examples": [
+            "DeviceNameExample"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "timezone": {
+          "type": "string",
+          "title": "Timezone",
+          "default": "",
+          "examples": [
+            "Europe/Gibraltar"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "maintainer": {
+          "type": "string",
+          "title": "Maintainer",
+          "default": "",
+          "examples": [
+            "email@maintainermail.org"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description",
+          "default": "",
+          "examples": [
+            "Bacon ipsum dolor amet buffalo tongue rump."
+          ],
+          "pattern": "^(.*)$"
+        },
+        "coordinates": {
+          "type": "object",
+          "title": "Coordinates",
+          "default": "",
+          "examples": [
+            {
+              "globalCoordinates" : {
+                "lat": "66° 34′ (66.57°) N",
+                "lng": "23° 26′ (23.43°) S"
+              },
+              "localCoordinates": {
+                "floor": "12",
+                "rack": "bd540"
+              }
+            }
+          ],
+          "pattern": "^(.*)$"
+        },
+        "dimensions": {
+          "type": "object",
+          "title": "Dimensions",
+          "default": "",
+          "examples": [
+            {
+              "caseType": "MUX19tdmc",
+              "height": "5.22 in",
+              "width": "19 in",
+              "representation": "../representation.svg"
+            }
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "hardware": {
+      "type": "object",
+      "title": "Hardware",
+      "required": [
+        "model",
+        "manufacturer",
+        "version",
+        "modules"
+      ],
+      "properties": {
+        "model": {
+          "type": "string",
+          "title": "Device Model",
+          "default": "",
+          "examples": [
+            "SVRPK3000"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "manufacturer": {
+          "type": "string",
+          "title": "Manufacturer",
+          "default": "",
+          "examples": [
+            "Prosoft inc."
+          ],
+          "pattern": "^(.*)$"
+        },
+        "version": {
+          "type": "integer",
+          "title": "Device Version",
+          "default": 0,
+          "examples": [
+            2.05
+          ]
+        },
+        "modules": {
+          "type": "object",
+          "title": "Modules",
+          "default": "",
+          "examples": [
+             {
+               "slot": 1,
+               "moduleType": "Power Supply 220V"
+             },
+             {
+               "slot": 2,
+               "moduleType": "Interface Module C37.94"
+             },
+             {
+               "slot": 3,
+               "module": "empty"
+             }
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    }   
+  }
+}

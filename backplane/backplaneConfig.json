@@ -1,0 +1,40 @@
+{
+  "classTitle": "Backplane Class",
+  "classId": "$714",
+  "generalProperties": {
+    "backplaneModel": "T1000",
+    "backplaneId": "backpi2",
+    "parentDeviceClassId": "$DMux",
+    "parentDeviceType": "Muxtiplexer-20",
+    "parentDeviceName": "Dm",
+    "properties": {
+      "slots": [
+        {
+          "slot1": "lot8"
+        },
+        {
+          "slot2": "lot8"
+        },
+        {
+          "slot3": "lot16"
+        },
+        {
+          "slot4": "lot8"
+        },
+        {
+          "slot5": "lot16"
+        },
+        {
+          "slot6": "lot8"
+        }
+      ],
+      "prop1": "Some property",
+      "props": {
+          "foo": "bar",
+          "foo2": "bar2",
+          "fizz": "buzz",
+          "new": "wen"
+      }
+    }
+  }
+}

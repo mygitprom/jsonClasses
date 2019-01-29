@@ -1,0 +1,12 @@
+{
+  "classTitle": "Module",
+  "classId": "$module",
+  "moduleClassId": {
+    "anyOf" : ["$c3794", "$eth3794", "$power_supply220", "$custom", "$fiber_opric_4eth"],
+    "value": ""
+  },
+  "moduleType": {
+    "anyOf" : ["C37.94E Module", "Eth-C37.94E Module", "Power Supply 220V", "Custom Type", "4Port Ethernet"],
+    "value": ""
+  }
+}

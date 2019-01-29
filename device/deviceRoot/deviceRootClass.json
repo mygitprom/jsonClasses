@@ -1,0 +1,12 @@
+{
+  "classTitle": "Device",
+  "classId": "$device",
+  "deviceClassId": {
+    "anyOf" : ["$digitalMux", "$UPASK", "$digitalSwitch", "$custom", "$emptyCase"],
+    "value": ""
+  },
+  "deviceType": {
+    "anyOf" : ["Digital Multiplexer", "UPASK", "Digital Switch", "Custom Type", "Empty Case"],
+    "value": ""
+  }
+}

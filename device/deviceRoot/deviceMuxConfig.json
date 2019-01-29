@@ -1,0 +1,60 @@
+{
+  "classTitle": "Device Mux Class",
+  "classId": "$digitalMux",
+  "generalProperties": {
+    "deviceId": "DigitalMux-511",
+    "deviceType": "Digital Multiplexer",
+    "deviceName": "DigitalMultiplexerName",
+    "uptime": 3501937
+  },
+  "properties": {
+    "hostname": "Hostinger",
+    "timezone": "Europe/Gibraltar",
+    "maintainer": "email@maintainermail.org",
+    "description": "Bacon ipsum dolor amet buffalo tongue rump.",
+    "coordinates": {
+      "globalCoordinates" : {
+        "lat": "66° 34′ (66.57°) N",
+        "lng": "23° 26′ (23.43°) S"
+      },
+      "localCoordinates": {
+        "floor": "12",
+        "rack": "bd540"
+      }
+    },
+    "dimensions": {
+      "caseType": "MUX19tdmc",
+      "height": "5.22 in",
+      "width": "19 in",
+      "representation": "../representation.svg"
+    },
+    "hardware": {
+      "model": "DigitalMux3000",
+      "manufacturer": "Umbrella Corp.",
+      "version": 2.05,
+      "backplane": {
+        "model": "T1000",
+        "backplaneId": "backpi2",
+        "backplaneClassId": "$BackPlane-714"
+      },
+      "modules": [
+        {
+          "slot": 1,
+          "moduleType": "Power Supply 220V",
+          "classId": "$ps220v",
+          "moduleId": "ff4"
+        },
+        {
+          "slot": 2,
+          "moduleType": "Interface Module C37.94-Ethernet",
+          "classId": "$IM3794",
+          "moduleId": "27e"
+        },
+        {
+          "slot": 3,
+          "module": "empty"
+        }
+      ]
+    }
+  }
+}

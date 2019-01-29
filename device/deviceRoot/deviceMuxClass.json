@@ -1,0 +1,129 @@
+{
+  "classTitle": "Multiplexer Device",
+  "classId": "$digitalMux",
+  "generalProperties": {
+    "deviceId": {
+      "type": "String",
+      "value": "",
+      "example": "DigitalMux-511",
+      "validation": "validationPropExample"
+    },
+    "deviceType": "Digital Multiplexer",
+    "deviceName": {
+      "type": "String",
+      "value": "",
+      "example": "DigitalMuxName",
+      "validation": "validationPropExample"
+    },
+    "uptime": {
+      "type": "Number",
+      "value": "",
+      "example": 4536382,
+      "measure": "ms"
+    }
+  },
+  "properties": {
+    "hostname": {
+      "type": "String",
+      "value": "",
+      "example": "Hostinger",
+      "validation": "validationPropExample"
+    },
+    "timezone": {
+      "type": "String",
+      "value": "",
+      "example": "Europe/Gibraltar"
+    },
+    "maintainer": {
+      "type": "String",
+      "value": "",
+      "example": "email@maintainermail.org",
+      "validation": "validationPropExample"
+    },
+    "description": {
+      "type": "String",
+      "value": "",
+      "example": "Bacon ipsum dolor amet buffalo tongue rump.",
+      "validation": "validationPropExample"
+    },
+    "coordinates": {
+      "globalCoordinates" : {
+        "lat": "66° 34′ (66.57°) N",
+        "lng": "23° 26′ (23.43°) S"
+      },
+      "localCoordinates": {
+        "floor": "12",
+        "rack": "bd540"
+      }
+    },
+    "dimensions": {
+      "caseType": {
+        "anyOf" : ["MUX19-1000", "MUX19-2000"],
+        "value": "",
+        "example": "MUX19-1000",
+        "validation": "validationPropExample"
+      },
+      "height": 5.22,
+      "width": 19,
+      "validation": "validationPropExample",
+      "representation": "../representation.svg"
+      }
+    },
+    "hardware": {
+      "model": {
+        "type": "String",
+        "anyOf" : ["SVRPK3000", "VCS-PI"],
+        "value": "",
+        "example": "SVRPK3000",
+        "validation": "validationPropExample"
+      },
+      "manufacturer": {
+        "type": "String",
+        "anyOf" : ["Labean Inc.", "The Bean", "Custom"],
+        "value": "",
+        "example": "Labean Inc.",
+        "validation": "validationPropExample"
+      },
+      
+      "version": {
+        "type": "Number",
+        "value": "",
+        "example": 2.05,
+        "validation": "validationPropExample"
+      },
+      "backplane": {
+        "type": "String",
+        "anyOf" : ["T1000", "F16"],
+        "value": {},
+        "example":  {
+          "model": "T1000",
+          "backplaneClassId": "$714"
+        },
+        "validation": "validationPropExample"
+      },
+      "modules":  {
+        "type": "Array",
+        "anyOf" : ["Power Supply 220V", "Interface Module C37.94-Ethernet", "Interface Module Ethernet-1000", "CPU-Module", "Custom"],
+        "value": [],
+        "example":  [
+          {
+            "slot": 1,
+            "moduleType": "Power Supply 220V",
+            "moduleClassId": "$ps220v",
+            "moduleId": "ff4"
+          },
+          {
+            "slot": 2,
+            "moduleType": "Interface Module C37.94-Ethernet",
+            "moduleClassId": "$IM3794",
+            "moduleId": "27e"
+          },
+          {
+            "slot": 3,
+            "module": "empty"
+          }
+        ],
+        "validation": "validationPropExample"
+      }
+    }
+}

@@ -1,0 +1,114 @@
+{
+  "title": "C37.94E Module",
+  "classId": "$c3794E",
+  "generalProperties": {
+    "moduleId": "c3794E_4cd6",
+    "moduleType": "Interface Module C37.94-Ethernet",
+    "moduleName": "Yellow 2011",
+    "parentClassId": "$digitalMux",
+    "parentDeviceId": "DigitalMux-511",
+    "uptime": 3501940
+  },
+  "properties": {
+    "maintainer": "unclevasia@innocent.org",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "position": {
+      "slot": 1
+    },
+    "dimensions" : {
+      "baseboard": {
+        "boardType": "littleGreenBoard",
+        "boardClass": "$littleGreenBoard"
+      },
+      "moduleSize": {
+        "width": "0.8 in",
+        "height": "4.96 in",
+        "depth": "7.68 in"
+      },
+      "representation": "../modules/littleGreenModule.svg"
+    },
+    "hardware": {
+      "moduleModel": "C37.94E-II",
+      "manufacturer": "Cyberdyne Systems",
+      "version": 1.02,
+      "interfaces": [
+        {
+            "name": "lo0",
+            "type": "ethernet",
+            "state": "work",
+            "interfaceClassId": "$ethernet",
+            "interfaceId": "ethernet-II",
+            "addresses": [
+                {
+                    "address": "127.0.0.1",
+                    "mask": 8,
+                    "adressType": "static",
+                    "family": "ipv4"
+                }
+            ]
+        },
+        {
+            "name": "eth0",
+            "type": "ethernet",
+            "state": "work",
+            "interfaceClassId": "$ethernet",
+            "interfaceId": "ethernet-II",
+            "addresses": [
+                {
+                    "address": "192.168.1.1",
+                    "mask": 24,
+                    "adressType": "static",
+                    "family": "ipv4"
+                }
+            ]
+        }
+    ],
+    "frontPanelProperties": {
+      "leds": [
+        {
+          "1": {
+            "color": "red",
+            "state": "off",
+            "blinkingFrequency": 0
+          },
+          "2": {
+            "color": "yellow",
+            "state": "off",
+            "blinkingFrequency": 0
+          },
+          "3": {
+            "color": "green",
+            "state": "blinking",
+            "blinkingFrequency": 3
+          },
+          "4": {
+            "color": "red",
+            "state": "blinking",
+            "blinkingFrequency": 5
+          }
+        }
+      ]
+    },
+    "software": {
+      "operatingSystem": "Ubuntu Yakkety Yak (development branch)",
+      "kernel": "4.4.0-34-generic",
+      "uptime": 3234483,
+      "applications": [
+        {
+          "app1": "app1prop"
+        },
+        {
+          "app2": "app1prop"
+        },
+        {
+          "app3": "app1prop"
+        }
+      ],
+      "firmware": {
+        "version": 0.23
+      }
+    }
+
+    }
+  }
+}

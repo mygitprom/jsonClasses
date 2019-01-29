@@ -1,0 +1,52 @@
+{
+  "classTitle": "Backplane Class",
+  "classId": "$714",
+  "generalProperties": {
+    "backplaneModel": {
+      "anyOf" : ["T1000", "T2000", "T3000"],
+      "value": "",
+      "example": "T1000",
+      "validation": "validationPropExample"
+    },
+    "backplaneId": {
+      "type": "String",
+      "value": "",
+      "example": "backpi2",
+      "validation": "validationPropExample"
+    },
+    "parentDeviceClassId": {
+      "anyOf" : ["$DMux", "$up19"],
+      "value": "",
+      "example": "$DMux",
+      "validation": "validationPropExample"
+    },
+    "parentDeviceType": {
+      "anyOf" : ["Muxtiplexer-10", "Muxtiplexer-20"],
+      "value": "",
+      "example": "Multiplexer-10",
+      "validation": "validationPropExample"
+    },
+    "parentDeviceName": "Dm",
+    "properties": {
+      "slotTypesClasses": {
+        "anyOf" : ["$slt1", "$slt2"],
+        "value": "",
+        "example": "$slt1",
+        "validation": "validationPropExample"
+      },
+      "slotTypes": {
+        "anyOf" : ["lot8", "lot16"],
+        "value": "",
+        "example": "$lot16",
+        "validation": "validationPropExample"
+      },
+      "prop1": "Some string property goes here",
+      "props": {
+          "foo": "bar",
+          "foo2": "bar2",
+          "fizz": "buzz",
+          "new": "wen"
+      }
+    }
+  }
+}

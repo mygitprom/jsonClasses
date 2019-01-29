@@ -1,0 +1,54 @@
+{
+  "classTitle": "Ethernet",
+  "classId": {
+    "type": "String",
+    "value": "",
+    "anyOf": ["$ethernet", "$GigE", "$FastEthernet", "10GigE"]     
+  },
+  "generalProperties": {
+    "portId": {
+      "type": "String",
+      "value": "",
+      "example": "GigE-2"     
+    },
+    "type": {
+      "type": "String",
+      "value": "",
+      "example": "1000BASE-T"    
+    },
+    "portName": "Second Port eth2",
+    "parentClassId": "$c3794E",
+    "parentModuleId": "c3794E_4cd6",
+    "state": "work",
+    "uptime": 12943780
+  },
+  "statistics": {
+    "collisions": 0,
+    "rx_frame_errors": 0,
+    "tx_compressed": 0,
+    "multicast": 0,
+    "rx_length_errors": 0,
+    "tx_dropped": 0,
+    "rx_bytes": 3542783708,
+    "rx_missed_errors": 0,
+    "tx_errors": 0,
+    "rx_compressed": 0,
+    "rx_over_errors": 0,
+    "tx_fifo_errors": 0,
+    "rx_crc_errors": 0,
+    "rx_packets": 35118502,
+    "tx_heartbeat_errors": 0,
+    "rx_dropped": 14,
+    "tx_aborted_errors": 0,
+    "tx_packets": 11761973,
+    "rx_errors": 0,
+    "tx_bytes": 2952333765,
+    "tx_window_errors": 0,
+    "rx_fifo_errors": 0,
+    "tx_carrier_errors": 0
+  },
+  "cable": {
+    "cableClassId": "$2481bcdb",
+    "cableId": "bfd2-e8162852f0fc"
+  }
+}

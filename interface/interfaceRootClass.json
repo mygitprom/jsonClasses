@@ -1,0 +1,12 @@
+{
+  "classTitle": "Interface",
+  "classId": "$interface",
+  "interfaceClassId": {
+    "anyOf" : ["$ethernet", "$GigE", "$FastEthernet", "$custom", "$C3794", "10GigE"],
+    "value": ""
+  },
+  "interfaceType": {
+    "anyOf" : ["Ethernet", "Fast Ethernet", "Gigabit Ethernet", "Custom Type", "10 Gigabit Ethernet", "C37.94"],
+    "value": ""
+  }
+}

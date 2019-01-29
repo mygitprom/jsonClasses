@@ -1,0 +1,225 @@
+{
+  "classTitle": "C37.94E Module Class",
+  "classId": "$c3794E",
+  "generalProperties": {
+    "moduleId": {
+      "type" : "String",
+      "value": "",
+      "example": "c3794E_4cd6",
+      "validation": "validationPropExample"
+    },
+    "moduleType": {
+      "type": "String",
+      "value": "Interface Module C37.94-Ethernet",
+      "validation": "validationPropExample"
+    },
+    "moduleName": {
+      "type": "String",
+      "value": "",
+      "example": "Yellow 2011",
+      "validation": "validationPropExample"
+    },
+    "parentDeviceClassId": {
+      "anyOf" : ["$digitalMux", "$UPASK", "$digitalSwitch"],
+      "value": "",
+      "example": "$digitalMux",
+      "validation": "validationPropExample"
+    },
+    "parentDeviceId": {
+      "type": "String",
+      "value": "",
+      "example": "DigitalMux-511",
+      "validation": "validationPropExample"
+    },
+    "uptime": {
+      "type": "Number",
+      "value": "",
+      "example": 3501940,
+      "measure": "ms"
+    }
+  },
+  "properties": {
+    "maintainer": {
+      "type": "String",
+      "value": "",
+      "example": "unclevasia@innocent.org",
+      "validation": "validationPropExample"
+    },
+    "description": {
+      "type": "String",
+      "value": "",
+      "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "validation": "validationPropExample"
+    },
+    "position": {
+      "type": "Number",
+      "slot": {
+        "anyOf" : ["1", "2", "3", "9"],
+        "value": "",
+        "example": "1",
+        "validation": "validationPropExample"
+      }  
+    },
+    "dimensions" : {
+      "baseboard": {
+        "type": "Object",
+        "value": {},
+        "boardType": {
+          "anyOf": ["Little Green Board", "Big Green Board"]
+        },
+        "boardClass": {
+          "anyOf": ["$littleGreenBoard", "bigGreenBoard"]
+        },
+        "example": {
+          "boardType": "Little Green Board",
+          "boardClass": "$littleGreenBoard-419"
+        },
+        "validation": "validationPropExample"
+      },
+      "moduleSize": {
+        "type": "Object",
+        "value": {},
+        "anyOf": [
+          {
+            "width": "0.8 in",
+            "height": "4.96 in",
+            "depth": "7.68 in"
+          },
+          {
+            "width": "1.8 in",
+            "height": "3.96 in",
+            "depth": "7.68 in"
+          }
+        ],
+        "example": {
+          "width": "0.8 in",
+          "height": "4.96 in",
+          "depth": "7.68 in"
+        },
+        "validation": "validationPropExample"
+      },
+      "representation": "../modules/littleGreenModule.svg"
+    },
+    "hardware": {
+      "moduleModel": {
+        "type": "String",
+        "value": "C37.94/E-II",
+        "validation": "validationPropExample"
+      },
+      "manufacturer": {
+        "value": "Cyberdyne Systems",
+        "validation": "validationPropExample"
+      },
+      "version": {
+        "type": "Number",
+        "value": "",
+        "example": 1.02,
+        "validation": "validationPropExample"
+      },
+      "interfaces": {
+        "type": "Array",
+        "value": [],
+        "anyOf": ["$ethernet", "$GigE", "$Fast Ethernet", "$custom", "$C3794", "10GigE"],
+        "example": [
+          {
+              "name": "lo0",
+              "type": "ethernet",
+              "state": "work",
+              "interfaceClassId": "$ethernet",
+              "interfaceId": "ethernet-I",
+              "addresses": [
+                  {
+                      "address": "127.0.0.1",
+                      "mask": 8,
+                      "adressType": "static",
+                      "family": "ipv4"
+                  }
+              ]
+          },
+          {
+              "name": "eth0",
+              "type": "ethernet",
+              "state": "work",
+              "interfaceClassId": "$ethernet",
+              "interfaceId": "ethernet-II",
+              "addresses": [
+                  {
+                      "address": "192.168.1.1",
+                      "mask": 24,
+                      "adressType": "static",
+                      "family": "ipv4"
+                  }
+              ]
+          }
+        ]
+      },
+      "validation": "validationPropExample",
+    "frontPanelProperties": {
+      "leds": {
+        "type": "Object",
+        "value": {},
+        "anyOf": ["$redLed", "$greenLed", "$yellowLed", "$multyColorLed"]        
+      },
+      "example": [
+        {
+          "1": {
+            "ledClassId": "$redLed",
+            "ledId": "redLed-I",
+            "color": "red",
+            "state": "off",
+            "blinkingFrequency": 0
+          },
+          "2": {
+            "ledClassId": "$yellowLed",
+            "ledId": "yellowLed-II",
+            "color": "yellow",
+            "state": "on",
+            "blinkingFrequency": 0
+          },
+          "3": {
+            "ledClassId": "$greenLed",
+            "ledId": "greenLed-I",
+            "color": "green",
+            "state": "blinking",
+            "blinkingFrequency": 3
+          },
+          "4": {
+            "ledClassId": "$greenLed",
+            "ledId": "greenLed-II",
+            "color": "red",
+            "state": "blinking",
+            "blinkingFrequency": 5
+          }
+        }
+      ],
+      "validation": "validationPropExample"
+    },
+    "software": {
+      "operatingSystem": {
+        "type": "String",
+        "anyOf" : ["Ubuntu Yakkety Yak (development branch)", "Sheep on Meth", "Ubuntu Precise Pangolin", "Karmic Koala"],
+        "value": "",
+        "example": "Ubuntu Precise Pangolin",
+        "validation": "validationPropExample"
+      },
+      "kernel": "4.4.0-34-generic",
+      "uptime": 3234483,
+      "applications": [
+        {
+          "app1": "app1prop"
+        },
+        {
+          "app2": "app1prop"
+        },
+        {
+          "app3": "app1prop"
+        }
+      ],
+      "firmware": {
+        "version": 0.23
+      }
+    }
+
+    }
+  }
+}
